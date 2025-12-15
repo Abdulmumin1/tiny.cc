@@ -1,0 +1,27 @@
+{
+  "name": "tiny.cc",
+  "private": true,
+  "module": "index.ts",
+  "scripts": {
+    "dev": "bun src/index.ts",
+    "build": "bun build src/index.ts --outdir ./dist --target node",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.948.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "ioredis": "^5.8.2",
+    "puppeteer": "^24.33.0",
+    "rate-limit-redis": "^4.3.1",
+    "redis": "^5.10.0"
+  }
+}
