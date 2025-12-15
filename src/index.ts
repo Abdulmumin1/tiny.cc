@@ -18,7 +18,7 @@ const limiter = rateLimit({
       redis.call(command, ...args) as any,
   }),
   windowMs: 5 * 60 * 1000, // 5 minutes
-  max: 100, // limit each IP to 25 requests per windowMs
+  max: 25, // limit each IP to 25 requests per windowMs
   message: "Too many requests from this IP, please try again later.",
   standardHeaders: true,
   legacyHeaders: false,
