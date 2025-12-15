@@ -1,6 +1,6 @@
 # tiny.cc
 
-A web service that generates screenshots of websites on demand. It uses Puppeteer for headless browser rendering, stores screenshots in S3 for caching, and implements rate limiting with Redis.
+A web service that generates screenshots of web pages. It uses Puppeteer for headless browser rendering, stores screenshots in S3 compact storage
 
 ## Installation
 
